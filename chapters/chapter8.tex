@@ -20,7 +20,7 @@
 \begin{bew}
 	\({(a_n)}_{n\in\N}, a_{n+1} \geq a_n \quad \forall n\in\N \) (oder \( \forall n\geq K \in\N \))\\
 	und \( \exists C\in\R: a_n \leq C \quad \forall n\in\N \) (oder \( \forall n\geq K \in\N \))\\
-	\[ B:= \{a_n, n\in\N \} \subset \R, B\neq \emptyset \text{ und } B\leq C. \]
+	\[ B:= \{a_n | n\in\N \} \subset \R, B\neq \emptyset \text{ und } B\leq C. \]
 	\(\overundersett{Vollst.}{axiom}{\Rightarrow} L := \sup B\) die kleinste obere Schranke für \(B\).\\
 	\(\Rightarrow a_n \leq L \quad \forall n\in\N \).\\
 	Und: \(L\) kleinste ob. Schranke \( \Rightarrow \forall \varepsilon>0: L-\varepsilon \) keine obere Schranke für \(B\).\\
@@ -44,7 +44,7 @@
 	Beh. 1:
 	\begin{align*}
 		f_n = {\left(1+\frac{1}{n}\right)}^n  &= \sum_{k=0}^{n} \binom{n}{k} {\left( \frac{1}{n} \right)}^k\\
-		&= \sum_{k=0}^{n} \underbrace{\frac{n!}{k!(n-k)!}}_{=\frac{n(n-1)\ldots (n-k+1)}{k!}} \\
+		&= \sum_{k=0}^{n} \underbrace{\frac{n!}{k!(n-k)!}}_{=\frac{n(n-1)\ldots (n-k+1)}{k!}} {\left( \frac{1}{n} \right)}^k \\
 		&= \sum_{k=0}^{n} \frac{1}{k!} \frac{n}{n} \underbrace{\frac{n-1}{n}}_{<1} \underbrace{\frac{n-k+1}{n}}_{<1}\\
 		&\leq \sum_{k=0}^{n} \frac{1}{k!} =: e_n, \quad f_n \leq e_n \forall n\in\N \\
 		e_{n+1} = e_n + \frac{1}{(n+1)!} > 1_n.
